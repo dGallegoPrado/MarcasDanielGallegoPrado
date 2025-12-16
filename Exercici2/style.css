@@ -1,0 +1,196 @@
+/* Fondo general y tipografía */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  color: #fff;
+}
+
+/* Imagen principal del logo */
+.logo {
+  position: relative;      /* necesario para que .principio se posicione dentro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+H1{
+  display: flex;
+  justify-content: center;
+}
+.web{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+
+audio {
+  margin-top: 70px;
+  border: 3px solid #fc9296;      /* borde verde */
+  border-radius: 10px;            /* esquinas redondeadas */
+  background-color: #ff9a9e;         /* fondo blanco */
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3); /* sombra suave */
+  padding: 5px;                   /* espacio interno */
+}
+
+
+
+
+
+
+/* Estilo de los iconos de redes */
+.redes img {
+  width: 64px;
+  height: auto;
+  margin: 5px;
+  transition: transform 0.3s ease;
+}
+
+.redes img:hover {
+  transform: scale(1.1); /* efecto al pasar el ratón */
+}
+.dropbtn {
+  font-family: 'Poppins', sans-serif;
+  background: none;        /* quita el fondo */
+  color: #e75480;          /* color del texto (rosa fuerte) */
+  padding: 0;              /* quita el relleno extra */
+  font-size: 40px;         /* tamaño del texto */
+  border: none;            /* sin borde */
+  cursor: pointer;         /* sigue siendo clicable */
+  text-decoration: none; /* opcional, para que parezca enlace */
+}
+
+.dropdown {
+  position: absolute; /* lo sacamos del flujo normal */
+  top: 20px;          /* distancia desde el borde superior */
+  left: 50%;          /* centrado horizontal */
+  transform: translateX(-50%); /* ajusta para que quede centrado */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;              /* coloca el menú justo debajo del texto */
+  left: 0;
+  background-color: #ffe4f7; /* fondo rosa pastel */
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1000;          /* asegura que quede por encima del logo */
+}
+
+.dropdown-content a {
+  color: #4b0082;           /* texto morado oscuro */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffb6c1; /* rosa claro al pasar el ratón */
+  color: #fff;               /* texto blanco en hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #e75480; /* rosa fuerte al pasar el ratón */
+  color: #fff;
+}
+/*lista*/
+.components ul {
+  list-style-type: none;       /* quita los números o viñetas */
+  padding: 0;
+  margin: 20px auto;
+  width: 60%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.components li {
+  background: #fff;
+  text-align: center;
+  justify-items: center;
+  color: #333; /*color letra*/
+  margin: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.components li:hover {
+  transform: scale(1.2);      /* efecto al pasar el ratón */
+  background: #ffe0e0;         /* cambia el color de fondo */
+}
+/*fin lista*/
+/*tabla*/
+.albums table {
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.albums th, .albums td {
+  padding: 12px 16px;
+  text-align: center;
+  color: black;
+  border: 1px solid #ddd;
+}
+
+.albums th {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.albums tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.albums tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.albums tr:hover {
+  background-color: #ffe0e0;
+  transform: scale(1.02);
+  transition: all 0.2s ease;
+}
+/*fin tabla*/
+
+.videos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 20px;                              /* espacio entre los videos */
+  justify-items: center;  
+}
+
+.mapa{
+  display: flex;
+  justify-content: center;
+}
+
+.footerimg {
+  display: flex;              /* activa flexbox */
+  justify-content: center;    /* centra horizontalmente las imágenes */
+  align-items: center;        /* centra verticalmente dentro del footer */
+  padding: 20px; 
+               
+}
+
